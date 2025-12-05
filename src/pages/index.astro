@@ -15,7 +15,10 @@ const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 ---
-<BaseLayout>
+<BaseLayout 
+  title="FOSS LA — Free & Open Source Software Community in Ladakh"
+  description="Join FOSS LA, Ladakh's thriving community for open source software. Collaborate on projects, attend workshops, and connect with developers, students, and FOSS enthusiasts."
+>
   <section class="relative min-h-[90vh] overflow-hidden">
     <div
       class="absolute inset-0"

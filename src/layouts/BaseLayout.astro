@@ -6,20 +6,67 @@ import "@/styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  canonical?: string;
 }
 
 const {
   title = "FOSS LA — Free & Open Source Software Ladakh",
-  description = "Building a thriving Free & Open Source Software community in Ladakh."
+  description = "Building a thriving Free & Open Source Software community in Ladakh.",
+  image = "/og-image.svg",
+  canonical = Astro.url.pathname
 } = Astro.props as Props;
+
+const fullTitle = title.includes("FOSS LA") ? title : `${title} | FOSS LA`;
+const canonicalURL = new URL(canonical, Astro.site || "https://fossla.org").href;
+const ogImage = new URL(image, Astro.site || "https://fossla.org").href;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="FOSS LA" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    
+    <!-- Additional SEO -->
+    <meta name="keywords" content="FOSS, Open Source, Ladakh, Linux, Community, Technology, Education, Workshops" />
+    <meta name="author" content="FOSS LA" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": fullTitle,
+      "description": description,
+      "url": canonicalURL,
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "FOSS LA",
+        "url": "https://fossla.org"
+      }
+    })} />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
