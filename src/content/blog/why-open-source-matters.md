@@ -11,7 +11,7 @@ When we talk about software, we usually ask functional questions: Does it work? 
 
 Open Source is more than just a development model; it is a philosophy of freedom. And for Leh a high altitude town navigating the unique challenges of isolation, climate, and connectivity adopting Open Source isn't just a technical preference. It is a strategic necessity for true digital self reliance.
 
-## The Misconception of "Free"
+### The Misconception of "Free"
 
 The biggest barrier to understanding Free and Open Source Software (FOSS) is the English language itself. When we say "Free Software," we don't mean "zero cost" (though it often is). We mean **Liberty**. As the old adage goes: *"Think free speech, not free beer."*
 

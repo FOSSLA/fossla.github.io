@@ -141,41 +141,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"fossla-kickoff-event.md": {
-	id: "fossla-kickoff-event.md";
-  slug: "fossla-kickoff-event";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"getting-started-linux.md": {
-	id: "getting-started-linux.md";
-  slug: "getting-started-linux";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"git-workshop-recap.md": {
-	id: "git-workshop-recap.md";
-  slug: "git-workshop-recap";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"ladakhi-language-pack.md": {
-	id: "ladakhi-language-pack.md";
-  slug: "ladakhi-language-pack";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"local-developer-interview.md": {
-	id: "local-developer-interview.md";
-  slug: "local-developer-interview";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "why-open-source-matters.md": {
 	id: "why-open-source-matters.md";
   slug: "why-open-source-matters";

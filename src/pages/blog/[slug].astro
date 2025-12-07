@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
+const { Content } = await post.render();
 ---
 <BaseLayout title={`${post.data.title} — FOSS LA Blog`} description={post.data.description}>
   <article class="container mx-auto max-w-3xl px-4 pt-24 pb-20">
@@ -29,8 +30,8 @@ const { post } = Astro.props;
       </span>
       {post.data.readTime && <span>{post.data.readTime}</span>}
     </div>
-    <div class="prose prose-invert prose-headings:font-semibold prose-p:text-muted-foreground">
-      {Astro.content}
+    <div class="prose prose-invert max-w-none prose-headings:text-foreground prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3 prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground prose-ul:text-muted-foreground prose-ol:text-muted-foreground prose-li:text-muted-foreground prose-blockquote:border-primary prose-blockquote:text-muted-foreground">
+      <Content />
     </div>
   </article>
 </BaseLayout>
