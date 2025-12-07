@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "deploy": "npx astro build && npx gh-pages -d dist"
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.13",
