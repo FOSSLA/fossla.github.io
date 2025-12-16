@@ -1,7 +1,7 @@
 ---
 title: "Breathing New Life into Old Machines: A FOSS Resurrection Story"
 description: "How free and open-source software transforms forgotten hardware into powerful tools for communities everywhere."
-date: 2024-12-09
+date: 2025-12-09
 author: "Aayan Mateen"
 category: "Philosophy & Practice"
 readTime: "7 min read"
