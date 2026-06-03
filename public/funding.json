@@ -11,34 +11,6 @@
             "url": "https://fossla.org"
         }
     },
-    "projects": [
-        {
-            "guid": "foss-ladakh-hub",
-            "name": "FOSS Ladakh Hub",
-            "description": "The main community website for FOSS LA — a statically generated site built with Astro 4 and Tailwind CSS. It hosts the community blog, events calendar, project showcase, resources, and team information for the FOSS Ladakh community.",
-            "webpageUrl": {
-                "url": "https://fossla.org"
-            },
-            "repositoryUrl": {
-                "url": "https://github.com/fossla/fossla.github.io"
-            },
-            "licenses": ["spdx:MIT"],
-            "tags": ["community", "open-source", "astro", "education", "ladakh", "india", "foss"]
-        },
-        {
-            "guid": "fossla-launch-opensuse-installfest",
-            "name": "FOSS LA Launch & openSUSE Install-fest",
-            "description": "FOSS LA's inaugural public event — a community launch celebration combined with a hands-on openSUSE install-fest in Leh. Attendees get help installing and configuring openSUSE on their own machines, with volunteers guiding them through dual-boot setups, driver configuration, and first steps with Linux. Funding covers venue, printed materials, USB drives with live images, and refreshments to keep the event free for all participants.",
-            "webpageUrl": {
-                "url": "https://fossla.org/events"
-            },
-            "repositoryUrl": {
-                "url": "https://github.com/fossla/fossla.github.io"
-            },
-            "licenses": ["spdx:CC-BY-SA-4.0"],
-            "tags": ["event", "linux", "opensuse", "install-fest", "ladakh", "education", "community", "foss"]
-        }
-    ],
     "funding": {
         "channels": [
             {

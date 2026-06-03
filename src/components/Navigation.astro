@@ -4,7 +4,6 @@ import { Icon } from "astro-icon/components";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
   { href: "/events", label: "Events" },
   { href: "/blog", label: "Blog" },
   { href: "/resources", label: "Resources" },
@@ -49,6 +48,20 @@ const isActive = (path: string) => (path === "/" ? normalizedPath === "/" : norm
           <Icon name="lucide:github" class="h-5 w-5" />
         </a>
         <a
+          href="https://www.instagram.com/fossladakh/"
+          class="p-2 text-muted-foreground transition hover:text-primary"
+          aria-label="Instagram"
+        >
+          <Icon name="lucide:instagram" class="h-5 w-5" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/foss-la/"
+          class="p-2 text-muted-foreground transition hover:text-primary"
+          aria-label="LinkedIn"
+        >
+          <Icon name="lucide:linkedin" class="h-5 w-5" />
+        </a>
+        <a
           href="https://t.me/fossla"
           class="ml-2 rounded border border-primary bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:bg-primary/90"
         >
@@ -91,6 +104,20 @@ const isActive = (path: string) => (path === "/" ? normalizedPath === "/" : norm
           aria-label="GitHub"
         >
           <Icon name="lucide:github" class="h-6 w-6" />
+        </a>
+        <a
+          href="https://www.instagram.com/fossladakh/"
+          class="p-2 text-muted-foreground transition hover:text-primary"
+          aria-label="Instagram"
+        >
+          <Icon name="lucide:instagram" class="h-6 w-6" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/foss-la/"
+          class="p-2 text-muted-foreground transition hover:text-primary"
+          aria-label="LinkedIn"
+        >
+          <Icon name="lucide:linkedin" class="h-6 w-6" />
         </a>
       </div>
       <a

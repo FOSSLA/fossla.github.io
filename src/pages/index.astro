@@ -5,7 +5,6 @@ import heroBg from "@/assets/hero-bg.jpg";
 import { getCollection } from "astro:content";
 
 const features = [
-  { icon: "lucide:code-2", title: "Open Source Projects", description: "Collaborate on initiatives that benefit Ladakh and beyond." },
   { icon: "lucide:users", title: "Community Driven", description: "Learn from peers, share knowledge, and grow together." },
   { icon: "lucide:book-open", title: "Workshops & Training", description: "Regular sessions on FOSS technologies and best practices." },
   { icon: "lucide:calendar", title: "Events & Meetups", description: "Hackathons, install-fests, and community gatherings." }
@@ -45,12 +44,6 @@ const posts = (await getCollection("blog"))
         >
           Join the Community
           <Icon name="lucide:arrow-right" class="ml-2 h-4 w-4 transition group-hover:translate-x-1" />
-        </a>
-        <a
-          href="/projects"
-          class="inline-flex items-center justify-center rounded border border-border px-6 py-3 text-lg font-semibold text-foreground transition hover:border-primary"
-        >
-          Explore Projects
         </a>
       </div>
     </div>
