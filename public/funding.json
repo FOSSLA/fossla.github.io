@@ -1,0 +1,90 @@
+{
+    "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+    "version": "v1.1.0",
+    "entity": {
+        "type": "group",
+        "role": "owner",
+        "name": "FOSS Ladakh (FOSS LA)",
+        "email": "info@fossla.org",
+        "description": "FOSS LA is a grassroots community dedicated to promoting Free and Open Source Software in Ladakh. We organise workshops, hackathons, and meetups that launch open source projects solving local problems. Our mission is to build a thriving FOSS community in Ladakh by providing education, resources, and collaboration opportunities — with a vision to make Ladakh a recognised hub for open source innovation.",
+        "webpageUrl": {
+            "url": "https://fossla.org"
+        }
+    },
+    "projects": [
+        {
+            "guid": "foss-ladakh-hub",
+            "name": "FOSS Ladakh Hub",
+            "description": "The main community website for FOSS LA — a statically generated site built with Astro 4 and Tailwind CSS. It hosts the community blog, events calendar, project showcase, resources, and team information for the FOSS Ladakh community.",
+            "webpageUrl": {
+                "url": "https://fossla.org"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/fossla/fossla.github.io"
+            },
+            "licenses": ["spdx:MIT"],
+            "tags": ["community", "open-source", "astro", "education", "ladakh", "india", "foss"]
+        },
+        {
+            "guid": "fossla-launch-opensuse-installfest",
+            "name": "FOSS LA Launch & openSUSE Install-fest",
+            "description": "FOSS LA's inaugural public event — a community launch celebration combined with a hands-on openSUSE install-fest in Leh. Attendees get help installing and configuring openSUSE on their own machines, with volunteers guiding them through dual-boot setups, driver configuration, and first steps with Linux. Funding covers venue, printed materials, USB drives with live images, and refreshments to keep the event free for all participants.",
+            "webpageUrl": {
+                "url": "https://fossla.org/events"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/fossla/fossla.github.io"
+            },
+            "licenses": ["spdx:CC-BY-SA-4.0"],
+            "tags": ["event", "linux", "opensuse", "install-fest", "ladakh", "education", "community", "foss"]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "bank-transfer",
+                "type": "bank",
+                "address": "",
+                "description": "Contact info@fossla.org for bank transfer details."
+            },
+            {
+                "guid": "open-collective",
+                "type": "payment-provider",
+                "address": "https://opencollective.com/foss-ladakh",
+                "description": "Support us transparently via Open Collective. All income and expenses are publicly visible."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "one-time-any",
+                "status": "active",
+                "name": "One-time Contribution",
+                "description": "A one-time donation of any amount to support FOSS LA's events, workshops, and community projects.",
+                "amount": 0,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["open-collective"]
+            },
+            {
+                "guid": "monthly-supporter",
+                "status": "active",
+                "name": "Monthly Supporter",
+                "description": "A recurring monthly contribution to help us sustain community operations, hosting, and organise regular events in Ladakh.",
+                "amount": 100,
+                "currency": "USD",
+                "frequency": "monthly",
+                "channels": ["open-collective"]
+            },
+            {
+                "guid": "yearly-sponsor",
+                "status": "active",
+                "name": "Annual Sponsor",
+                "description": "An annual sponsorship that helps fund hackathons, workshops, and open source projects across Ladakh for a full year.",
+                "amount": 500,
+                "currency": "USD",
+                "frequency": "yearly",
+                "channels": ["open-collective", "bank-transfer"]
+            }
+        ]
+    }
+}
