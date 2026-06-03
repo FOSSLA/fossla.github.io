@@ -11,12 +11,26 @@
             "url": "https://fossla.org"
         }
     },
+    "projects": [
+        {
+            "guid": "fossla-opensuse-installfest",
+            "name": "FOSS LA Launch & openSUSE Install-fest",
+            "description": "FOSS LA's inaugural public event — a community launch celebration combined with a hands-on openSUSE install-fest in Leh. Attendees get help installing and configuring openSUSE on their own machines, with volunteers guiding them through dual-boot setups, driver configuration, and first steps with Linux. Funding covers venue, printed materials, USB drives with live images, and refreshments to keep the event free for all participants.",
+            "webpageUrl": {
+                "url": "https://fossla.org/events"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/fossla/fossla.github.io"
+            },
+            "licenses": ["spdx:CC-BY-SA-4.0"],
+            "tags": ["event", "linux", "opensuse", "install-fest", "ladakh", "education", "community", "foss"]
+        }
+    ],
     "funding": {
         "channels": [
             {
                 "guid": "bank-transfer",
                 "type": "bank",
-                "address": "",
                 "description": "Contact info@fossla.org for bank transfer details."
             },
             {
